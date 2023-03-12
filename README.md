@@ -35,7 +35,8 @@ Please click on the link below to see the demo video:
 ## Process Highlights
 
 1. I started off building the models - the exact structure was detailed in the homework instructions. The only issue there was that the decimals weren't showing, so I had to research to find out that I had to add (10,2) to DECIMAL to make the decimal points show. 
-2. It took me a while to realize that I had to add Sequelize to the server.js file.
+2. Finishing the code for the routes also seemed straightforward, but I was having issues making anything work in Insomnia. And then I realized I hadn't added Sequelize to server.js. So that fixed it, and I reverted the code back to what I originally had, since I tried some other code out thinking that was the problem.
+3. The way the starter code is written, you have to have tag Ids listed when adding a product. At least you do to not get an error code, which seems to be a mistake in the starter code, but I didn't take time to try to fix it. There is actually an if statement that's supposed to allow for no tags, but there's a .then after the if statement that specifically refers to tags, so if you don't enter tags, it ultimately sends an error message, even though actually will update the product without tags. Anyway, it took some time to figure that out, but once I did, everything was straightfoward once again.
 
 ## License
 This product is licensed under MIT.
